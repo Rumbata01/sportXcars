@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sportXcar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+      color: white;
+    }
+    header {
+      background: url('https://cdn.pixabay.com/photo/2016/12/27/17/54/ferrari-1934121_1280.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 4em;
+      color: red;
+      text-shadow: 2px 2px 10px black;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.5em;
+      color: white;
+      margin-top: 10px;
+    }
+    section {
+      padding: 40px 20px;
+      background: #111;
+    }
+    section h2 {
+      text-align: center;
+      color: red;
+      margin-bottom: 40px;
+    }
+    .car-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .car-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 2px solid red;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .car-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .car-item:hover img {
+      transform: scale(1.1);
+    }
+    .car-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      font-size: 1.2em;
+      color: red;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>sportXcar</h1>
+  <p>Светът на спортните коли</p>
+</header>
+<section>
+  <h2>Избери своята спортна кола</h2>
+  <div class="car-gallery">
+    <div class="car-item">
+      <a href="porsche911.html">
+        <img src="https://cdn.pixabay.com/photo/2020/12/17/09/40/porsche-911-5835823_1280.jpg" alt="Porsche 911">
+        <div class="car-caption">Porsche 911</div>
+      </a>
+    </div>
+    <div class="car-item">
+      <a href="aventador.html">
+        <img src="https://cdn.pixabay.com/photo/2021/03/02/13/01/lamborghini-6062135_1280.jpg" alt="Lamborghini Aventador">
+        <div class="car-caption">Lamborghini Aventador</div>
+      </a>
+    </div>
+    <div class="car-item">
+      <a href="gtr.html">
+        <img src="https://cdn.pixabay.com/photo/2017/07/13/09/00/nissan-gt-r-2493113_1280.jpg" alt="Nissan GT-R">
+        <div class="car-caption">Nissan GT-R</div>
+      </a>
+    </div>
+    <div class="car-item">
+      <a href="mclaren720s.html">
+        <img src="https://cdn.pixabay.com/photo/2020/09/27/11/19/mclaren-5609429_1280.jpg" alt="McLaren 720S">
+        <div class="car-caption">McLaren 720S</div>
+      </a>
+    </div>
+    <div class="car-item">
+      <a href="chiron.html">
+        <img src="https://cdn.pixabay.com/photo/2020/10/24/18/13/bugatti-5681615_1280.jpg" alt="Bugatti Chiron">
+        <div class="car-caption">Bugatti Chiron</div>
+      </a>
+    </div>
+  </div>
+</section>
+<footer>
+  &copy; 2025 sportXcar | Създаден с любов към скоростта 🏎️
+</footer>
+</body>
+</html>
